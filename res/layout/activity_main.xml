@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RadioGroup android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_locale"
+                     android:gravity="center"
+                     android:background="@drawable/gray"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="fill_parent"
+                     android:checked="true"
+                     android:button="@null"
+                     android:drawableTop="@drawable/video_file"
+                     android:text="本地视频"
+                     android:layout_marginRight="1dp"
+                     android:textColor="@drawable/bottom_text_color"
+                     android:textSize="13sp"
+                     />
+        <RadioButton android:id="@+id/radio_online"
+                     android:gravity="center"
+                     android:background="@drawable/gray"
+                     android:drawableTop="@drawable/video_online"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:button="@null"
+                     android:layout_height="fill_parent"
+                     android:text="在线视频"
+                     android:textColor="@drawable/bottom_text_color"
+                     android:textSize="13sp"
+                     />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+            android:background="@drawable/white"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
+
